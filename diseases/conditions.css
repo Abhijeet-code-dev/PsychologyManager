@@ -1,0 +1,31 @@
+/*Image Responsive Done*/
+img{
+    max-width: 500px;
+    height: auto;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+/*setting maxwidth on text done*/
+.text{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding:10px;
+}
+h1,.subheading{
+    line-height: 1.1;
+    font-weight: bold;
+    margin: 5px;
+}
+h1{
+    font-size: 40px;
+}
+.subheading{
+    font-size: 30px;
+}
+p,ul li{
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 2px;
+}

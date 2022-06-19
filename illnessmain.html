@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Illness</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+       $(function(){
+        $('#navigation').load('navbar.html');
+       })
+   </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root{
+            --blue: #000080;
+            --orange: #ff8000;
+        }
+        .main_container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+            margin: 0 auto;
+            
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            
+            height: auto;
+            max-width: 600px;
+            margin: 20px;
+        }
+         .image_box{
+            
+            height: auto;
+            max-width: 100%;
+        } 
+        image{
+            height: 400px;
+            width: 400px
+        }
+        .image{
+            height: auto;
+            max-width: 100%;
+        }
+         .btn{
+            position: relative;
+            margin-top: 10px;
+            font-size: 20px;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            background-color: var(--blue);
+            color: white;
+            border-style: none;
+            padding: 5px;
+            
+        }
+        
+        .icon{
+            position: absolute;
+            right: .25rem;
+        }
+        .list{
+            list-style: none;
+           display: none;
+           overflow: hidden;
+           
+        }
+        
+        .list li{
+            padding: 1rem;
+            font-size: 21px;
+            
+        }
+        .list li a{
+            text-decoration: none;
+            color: black;
+        }
+        .list li:hover{
+              background-color: var(--orange);  
+            
+            color: white;
+           
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="navigation"></div>
+    <h1>Mental Conditions</h1>
+    <div class="main_container">
+        <div class="container">
+            <div class="image_box">
+               <a href="diseases\sud.html"> <img class="image" src="images/addictions.webp" alt="Addictions and Substance Use Disorders"></a>
+            </div>
+            <button class="btn accordian" id="btn1">Addictions<i class="icon fa fa-sort-desc"></i></button>
+            <div class="list">
+                <li><a href="diseases\sud.html">What is SUD and Addictions?</a></li>
+                <li><a href="diseases\alcohol.html">Alcohol Addiction</a></li>
+                <li><a href="diseases\opioid.html">Opioid Addiction</a></li>
+                <li><a href="diseases\gambling.html">Gambling</a></li>
+                <li><a href="diseases\tobacco.html">Tobacco Addiction</a></li>
+            </div>
+          
+        </div>
+        <div class="container">
+            <div class="image_box">
+                <a href="diseases/anxiety.html"><img class="image" src="images/anxiety.jpeg"></a>
+            </div>
+            <button class="btn accordian" id="btn2">Anxiety Disorders <i class="icon fa fa-sort-desc"></i></button>
+            <div class="list">
+                <li><a href="diseases/anxiety.html">What are Anxiety Disorders?</a></li>
+                <li><a href="diseases/gad.html">Generalized anxiety disorder (GAD)</a></li>
+                <li><a href="diseases/panic.html">Panic disorder</a></li>
+                <li><a href="diseases/social.html">Social anxiety disorder</a></li>
+                <li><a href="diseases/phobia.html">Specific phobias</a></li>
+                <li><a href="diseases/seperation.html">Separation anxiety disorder</a></li>
+
+            </div>
+        
+        </div>
+        <div class="container">
+            <div class="image_box">
+                <a href="diseases/eat.html"><img src="images/eating.webp" alt="Eating Disorders" class="image"></a>
+            </div>
+            <button class="btn accordian" id="btn3">Eating Disorders<i class="icon fa fa-sort-desc"></i></button>
+            <div class="list">
+                <li><a href="diseases/anorexia.html">Anorexia nervosa</a></li>
+                <li><a href="diseases/bulimia.html">Bulimia nervosa</a></li>
+                <li><a href="diseases/pica.html">Pica</a></li>
+            </div>
+        
+        </div>
+        <div class="container">
+            <div class="image_box">
+                <a href="diseases/personality.html"><img src="images/personality.jpg" alt="Personality Disorders" class="image"></a>
+            </div>
+            <button class="btn accordian" id="btn4">Personality Disorder<i class="icon fa fa-sort-desc"></i></button>
+            <div class="list">
+                
+                <li><a href="diseases/personality.html#antisocial">Antisocial Personality Disorder</a></li>
+                <li><a href="diseases/personality.html#avoidant">Avoidant Personality Disorder</a></li>
+                <li><a href="diseases/personality.html#borderline">Borderline Personality Disorder</a></li>
+                <li><a href="diseases/personality.html#dependent">Dependent Personality Disorder</a></li>
+                <li><a href="diseases/personality.html#schizoid">Schizoid Personality Disorder</a></li>
+                <li><a href="diseases/personality.html#obsessive">Obsessive-Compulsive Personality Disorder</a></li>
+                <li><a href="diseases/personality.html#paranoid">Paranoid Personality Disorder</a></li>
+                <li><a href="diseases/personality.html#schizotypal">Schizotypal Personality Disorder</a></li>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="image_box">
+                <a href="diseases/adhd.html"><img src="images/adhd.jpg" alt="ADHD" class="image"></a> 
+            </div>
+           <a href="diseases/adhd.html"><button class="btn" id="btn5">Adult Attention Deficit/Hyperactivity Disorder</button></a> 
+            
+        </div>
+        <div class="container">
+            <div class="image_box">
+               <a href="diseases/sleep.html"> <img src="images/sleep.jpg" alt="Sleep and Wake Disorders" class="image"></a>
+            </div>
+            <button class="btn accordian" id="btn6">Sleep and Wake Disorders<i class="icon fa fa-sort-desc"></i></button>
+            <div class="list">
+                <li><a href="diseases/sleep.html#circadian">Circadian Rhythm Sleep-Wake Disorder</a></li>
+                <li><a href="diseases/sleep.html#nightmare">Nightmare Disorder</a></li>
+                <li><a href="diseases/sleep.html#narcolepsy">Narcolepsy</a></li>
+                <li><a href="diseases/sleep.html#insomania">Isomania Disorder</a></li>
+                
+            </div>
+         
+        </div>
+        <div class="container">
+            <div class="image_box">
+                 <a href="diseases/depression.html"><img src="images/depression.jpg" alt=" Disorders" class="image"></a>
+            </div>
+            <button class="btn accordian" id="btn7">Depression<i class="icon fa fa-sort-desc"></i></button>
+            <div class="list">
+                <li><a href="diseases/depression.html#postpartum">Postpartum Depression</a></li>
+                <li><a href="diseases/depression.html#seasonal">Seasonal Affective Disorder</a></li>
+                <li><a href="diseases/depression.html#persistent">Persistent depressive disorder</a></li>
+                <li><a href="diseases/depression.html#premenstrual">Premenstrual Dysphoric Disorder (PMDD)</a></li>
+                <li><a href="diseases/depression.html#bipolar">Bipolar Disorder</a></li>
+                
+            </div>
+            
+        </div>
+        
+        <div class="container">
+            <div class="image_box">
+               <a href="diseases/schizophrenia.html"> <img src="images/schizophrenia.webp" alt="" class="image"></a>
+            </div>
+            <a href="diseases/schizophrenia.html"><button class="btn" id="btn8">Schizophrenia</button></a>
+        </div>
+        
+    </div>
+    <script>
+    let acc = document.querySelectorAll('.accordian');
+    let list = document.getElementsByClassName('.list');
+    for(items of acc){
+    items.addEventListener('click',(e)=>{
+        let name = e.currentTarget;
+        console.log(name);
+       
+        name.classList.toggle('active');
+        var panel = name.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+      panel.style.position = 'absolute';
+      panel.style.background = "white";
+      panel.style.zIndex="2";
+      panel.style.width= '400px';
+    }
+       
+    })
+}
+    </script>
+</body>
+</html>

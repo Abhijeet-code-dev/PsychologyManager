@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        :root{
+            --blue: #000080;
+            --orange: #ff8000;
+        }
+        .navbar{
+            background-color: var(--blue);
+            color: white;
+            padding-top: 5px;
+            
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin: 10px;
+           
+        }
+
+        .navbar ul li{
+            padding: 10px;
+            font-size: 19px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar ul li:hover{
+            background-color: rgba(0, 0, 255, 0.718);
+            
+            
+        }
+        #sitelogo{
+            width: 40px;
+            background-color: white;
+            padding: 2px;
+            border: 1px solid blue;
+            border-radius: 50%;
+            height: 25px;
+        }
+        h2{
+            text-align: center;
+            margin-top: -35px;
+        }
+        @media(max-width: 780px){
+           .ham{
+                
+               border: 1px dotted white;
+                width: 65px;
+                box-sizing: border-box;
+            }
+            .ham div{
+                background-color: whitesmoke;
+                margin: 7px;
+                padding: 3px;
+            }
+            .navbar{
+                
+                height: auto;
+            }
+            .navbar ul{
+                display: none;
+                left:-100%;
+            }
+            #abt{
+                z-index: 2;
+            }
+            
+            .link.active ul{
+               
+               display: block;
+               
+                
+            }
+            .navbar.active ul{
+                display: block;
+                position: fixed;
+               
+            }
+            
+        }
+        @media(max-width: 400px){
+            h2{
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation" class="navbar">
+        <img id="sitelogo" src="images/brain.webp" alt="PsychologyManager">
+        <h2>PSYCHOLOGYMANAGER</h2>
+        <div id="symbol" class="ham">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="link">
+        <ul>
+            <li><a href="index.html" target="_top">Home</a></li>
+            <li><a href="illnessmain.html" target="_top">Mental Illness</a></li>
+            <li><a href="solution.html" target="_top">Self Help</a></li>
+            <li><a id="abt" href="about.html" target="_top">About</a></li>
+            <li><a href="http://localhost/hpprac/shareform.php" target="_top">Share your story</a></li>
+            <li><a href="http://localhost/hpprac/display.php" target="_top">Stories</a></li>
+        </ul>
+        </div>
+        
+    </div>
+    <script>
+        let nav = document.querySelector('#symbol');
+        let links = document.querySelector('.link');
+        nav.addEventListener('click',()=>{
+            nav.classList.toggle('active');
+            links.classList.toggle('active');
+            
+        })
+    </script>
+</body>
+</html>

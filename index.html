@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsychologyManager</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+       $(function(){
+        $('#navigation').load('navbar.html');
+       })
+   </script>
+</head>
+<style>
+   
+   :root{
+            --blue: #000080;
+            --orange: #ff8000;
+        }
+    .articleContainer,.hwrapper,.vidtext_wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+        
+        padding: 10px;
+    }
+    .vidtext_wrapper{
+        margin: 10px;
+    }
+    .article{
+        margin: 15px;
+        
+        padding: 4px;
+        
+    }
+     img{
+        width: 400px;
+        height: 400px;
+        
+    }
+    .adjustable{
+        width: 100%;
+        height: auto;
+    }
+    .article h2,p{
+        max-width: 23rem;
+        padding: 10px;
+        margin: 5px;
+    }
+    p{
+        line-height: 1.3;
+    }
+   
+    .artbtn,.wbtn{
+        width: 60%;
+        font-size: 20px;
+        padding: 5x;
+        
+    }
+    .wbtn{
+        margin: 10px;
+        cursor: pointer;
+    }
+    .artbtn,.wbtn{
+        border-radius: 10px;
+        border-style: none;
+        padding: 5px;
+        background-color: var(--blue);
+        color: #fff;
+    }
+    .artbtn:hover,.wbtn:hover{
+        transition: 0.2s all;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+    .artbtn::after{
+        content:'\226B';
+        cursor: pointer;
+        padding: 4px;
+    }
+    
+    .headerVid,video{
+        height: 500px;
+        width: 500px;
+    }
+    .resp{
+        height: auto;
+        width: 100%;
+    }
+    .wtext,#headerText{
+        max-width: 25rem;
+        margin-left: 15px;
+        line-height: 2rem;
+    }
+    .wtext h1{
+        color: var(--blue);
+        font-family: 'comic sans Ms',sans,arial;
+        
+    }
+    .wtext h2{
+        line-height: 2rem;
+        margin: 2px;
+    }
+    #headerText h1{
+        color:blue;
+    }
+    #headerText h2{
+        line-height: 1rem;
+        margin: 2px;
+    }
+    
+    
+</style>
+<body>
+<div id="navigation"></div>
+    
+    <!--Site is about-->
+    <div class="hwrapper" id="headerContainer">
+        <div id="headerText">
+            <h1>Mental Health is Health</h1>
+            <h2>Begins with</h2><h1>Speaking up, Observing </h1><h2>and</h2><h1>Knowledge and awareness</h1>
+        </div>
+        <div id="headerVid">
+    <iframe class="resp" width="400" height="315" src="https://www.youtube.com/embed/49mfPFTZsHs?controls=0&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </div>
+    <!--Articles-->
+    <div class="articleContainer">
+        <div class="article" id="article1">
+            <img class="adjustable" src="images/happiness.jpg" alt="">
+            <h2>How Happiness improves Mental Health </h2>
+            <p>An article by Newport Academy on importance of Laughter in improving Mental Health. There is organization called Stand Up for Mental Health uses stand-up comedy to promote healing.</p>
+           <a href="https://www.newportacademy.com/resources/mental-health/laughter-good-for-you/"> <button class="artbtn">Read More</button></a>
+        </div>
+        <div class="article" id="article2">
+            <img class="adjustable" src="images/relationship.webp" alt="importance of relationships">
+            <h2>Why good relationships are essential
+                essential for our mental health</h2>
+                <p>An article by Relationshipsnsw.org talks about how important  is quality of relationships in maintaining mental health. How beautiful relationships improve mental health and how to create amazing bondings.</p>
+                <a href="https://www.relationshipsnsw.org.au/relationships-and-mental-health/"><button class="artbtn">Read More</button></a>
+        </div>
+        <div class="article" id="article3">
+            <img class="adjustable" src="images/habits.webp" alt="">
+            <h2>5 Habits to improve your Mental Health</h2>
+            <p>An article by carolinawellnesspsychiatry about the role of habits in maintaining good mental haelth. It even illustrates 5 habits to be followed for better mental health</p>
+            <a href="https://www.carolinawellnesspsychiatry.com/blog/5-habits-to-help-improve-your-mental-health#:~:text=By%20eating%20healthy%20foods%20that,good%20hormones%20serotonin%20and%20dopamine."><button class="artbtn">Read More</button></a>
+        </div>
+    </div>
+    <!--Content-->
+    <div class="wrapper" id="content">
+        <div class="vidtext_wrapper">
+        <div class="vid">
+            <video class="resp" width ="500px" preload loop controls controlsList = "nofullscreen">
+            <source src="disorder.mp4"></video>
+        </div>
+        <div class="wtext">
+            <h1>Lack of Calm and Peace</h1>
+            <h2>Anxious,Panicing in Situations,Having Suicidal Thoughts, Feeling Lonely and many more symptoms</h2>
+            <p>Find about various conditions along with their symptoms and Treatments.</p>
+            <a href="illnessmain.html"> <button class="wbtn">Explore Mental Conditions</button></a>
+        </div>
+    </div>
+    <div class="vidtext_wrapper">
+        <div class="wtext">
+            <h1>Rewire the Brain</h1>
+            <h2>Wandering Mind, Uncontrollable Thoughts</h2>
+            <h2>&ldquo;Meditation&rdquo;is the solution</h2>
+            <a href="solution.html#activity"><button class="wbtn">Learn about Meditation</button></a>
+        </div>
+        <div class="vid">
+            <video class="resp" width ="500px" preload muted loop controls controlsList = "nofullscreen">
+                <source src="meditation.mp4"></video>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
