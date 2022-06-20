@@ -1,3 +1,3 @@
 <?php
-Welcome to PsychologyManager
+echo "Welcome to PsychologyManager";
 ?>
