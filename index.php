@@ -1,5 +1,6 @@
 <?php
-echo "Welcome to PsychologyManager";
+
 include_once("index.html");
+include_once("shareform.php");
 
 ?>
